@@ -121,7 +121,6 @@ const checkGameStatus = () => {
 const handleRest = () => {
   xIsNext = true
   statusDiv.innerHTML = `${xSybmol} is next`
-
   for (const cellDiv of cellDivs) {
     cellDiv.classList.remove("x")
     cellDiv.classList.remove("o")
@@ -131,7 +130,6 @@ const handleRest = () => {
 }
 const handleCellClick = e => {
   const classList = e.target.classList
-
   console.log(location)
   if (!gameIsLive || classList[1] === "x" || classList[1] === "o") {
     return
